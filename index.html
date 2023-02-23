@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Styling for body*/
+        body{
+        border: 1px solid blueviolet;
+        margin:  2rem 10rem;
+        padding: 1rem;
+        }
+        /*Styling Form */
+        .Calc-items{
+            margin: 5rem 5rem 2rem 2rem;
+            position: relative;
+            text-align: center;
+        }
+        /*1st number box*/
+        #num1{
+            padding: 1rem  ;
+            margin: 5px;
+        }
+        /*2nd number box*/
+        #num2 {
+            padding: 1rem;
+            margin: 5px;
+        }
+        /*Calculated Output Box*/
+        #result{
+            text-align: center;
+            border: 2px solid black;
+            padding: 1rem;
+            margin-left: 38%;
+            margin-right: 40%;
+        }
+    </style>
+</head>
+<body>
+    <!--Heading-->
+    <h1>Calculator</h1>
+    <!--Form for Input numbers and operator -->
+    <form class="Calc-items">
+        <!--First Number -->
+        <input type="number" id="num1" placeholder="Enter first number" required>
+        <!--Select Operator-->
+        <select id="operator" required>
+            <!--Addition / Subtraction / Multiplication / Division options-->
+            <option value="">Select operator</option>
+            <option value="+">Addition (+)</i></option>
+            <option value="-">Subtraction (-)</option>
+            <option value="*">Multiplication (x)</option>
+            <option value="/">Division (/)</option>
+        </select>
+        <!--Second Number-->
+        <input type="number" id="num2" placeholder="Enter second number" required><br><br><br><br>
+        <!--Button of Answer-->
+        <button type="button" onclick="calculate()">Answer</button>
+    </form>
+    <!--Result Section -->
+    <div id="result"></div>
+
+<!--Attaching Javascript File -->
+<script src="main.js"></script>      
+</body>
+</html>
